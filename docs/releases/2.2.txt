@@ -90,6 +90,11 @@ Minor features
 * Added path matching to the :option:`collectstatic --ignore` option so that
   patterns like ``/vendor/*.js`` can be used.
 
+:mod: `django.shortcuts`
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+* The new :func:`django.shortcuts.make_toast` function returns ``'toast'``.
+
 Database backends
 ~~~~~~~~~~~~~~~~~
 
@@ -529,3 +534,4 @@ Miscellaneous
   prevent unexpected queries against non-default databases to leak state
   between tests. The previous behavior of ``allow_database_queries=True`` and
   ``multi_db=True`` can be achieved by setting ``databases='__all__'``.
+
